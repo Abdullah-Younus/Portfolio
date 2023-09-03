@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import Logo from './Logo';
 import { usePathname, useRouter } from 'next/navigation';
+import Icons from './Icons';
 
 const CustomLink = ({ href, title, className = "" }: any) => {
 
@@ -30,7 +31,7 @@ const NavBar = () => {
             </nav>
 
             <nav>
-                <Link href='/' target={"_blank"}>T</Link>
+                <Link href='/' target={"_blank"}><Icons/></Link>
                 <Link href='/' target={"_blank"}>T</Link>
                 <Link href='/' target={"_blank"}>T</Link>
                 <Link href='/' target={"_blank"}>T</Link>
