@@ -8,9 +8,8 @@ const Skilled = () => {
         <div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light'>
             Web
         </div>
-
+        
       </div>
-
     </div>
   )
 }
