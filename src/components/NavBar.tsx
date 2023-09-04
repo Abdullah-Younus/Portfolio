@@ -37,16 +37,16 @@ const NavBar = () => {
                 <motion.a whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} className='w-6 mr-3' href='/' target={"_blank"}>
                     <TwitterIcon />
                 </motion.a>
-                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mr-3'>
+                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mx-3'>
                     <GithubIcon />
                 </motion.a>
-                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mr-3'>
+                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mx-3'>
                     <LinkedInIcon />
                 </motion.a>
-                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mr-3'>
+                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mx-3'>
                     <PinterestIcon />
                 </motion.a>
-                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 mr-3'>
+                <motion.a href='/' whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }} target={"_blank"} className='w-6 ml-3'>
                     <DribbbleIcon />
                 </motion.a>
 
