@@ -12,8 +12,7 @@ const AnimatedNumbers = ({ value }: any) => {
     const ref = useRef(null);
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 });
-    //  @ts-ignore 
-    const isInView = useInView(ref);
+    const isInView = useInView(ref, { once: true });
 
     useEffect(() => {
         if (isInView) {
@@ -23,12 +22,12 @@ const AnimatedNumbers = ({ value }: any) => {
 
     useEffect(() => {
         springValue.on("change", (latest) => {
-            if(ref.current && latest.toFixed(0) <= value ){
+            if (ref.current && latest.toFixed(0) <= value) {
                 // @ts-ignore 
                 ref.current.textContent = latest.toFixed(0)
             }
         });
-    }, [springValue,value]);
+    }, [springValue, value]);
 
     return <span ref={ref}></span>
 }
@@ -65,15 +64,15 @@ const About = () => {
                     </div>
                     <div className='col-span-2 flex flex-col items-end justify-between'>
                         <div className='flex flex-col items-end justify-center'>
-                            <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={50}/>+</span>
+                            <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={50} />+</span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Clients</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
-                            <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={40}/>+</span>
+                            <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={40} />+</span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Project Completed</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
-                            <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={4}/>+</span>
+                            <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={4} />+</span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>Years of Experience</h2>
                         </div>
                     </div>
