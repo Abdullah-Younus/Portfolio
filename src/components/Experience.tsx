@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
+import LineLiicon from './LineLiicon'
 
 const Details = ({ position, company, companyLink, time, address, work }: any) => {
     return <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+        <LineLiicon />
         <div>
             <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; <a href={companyLink} className='text-primary capitalize' target='_blank'>@{company}</a> </h3>
             <span className='capitalize font-medium text-dark/75'>
@@ -52,9 +54,9 @@ const Experience = () => {
                         company="Digitrends"
                         time="2022-Present"
                         address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
+                        work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
+                        as product recommendations and user reviews, and optimizing the app's performance and reliability.
+                        "
                         companyLink="https://digitrends.co/"
                     />
                     <Details
@@ -62,9 +64,9 @@ const Experience = () => {
                         company="Digitrends"
                         time="2022-Present"
                         address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
+                        work="Worked on a team responsible for developing new features for Microsoft's Windows operating system, 
+                        including implementing a new user interface for a system settings panel and optimizing the performance of 
+                        a core system component."
                         companyLink="https://digitrends.co/"
                     />
                     <Details
@@ -72,9 +74,8 @@ const Experience = () => {
                         company="Digitrends"
                         time="2022-Present"
                         address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
+                        work="Assisted in teaching a course on computer programming, held office hours to help students with assignments, 
+                        and graded exams and assignments."
                         companyLink="https://digitrends.co/"
                     />
                     <Details
