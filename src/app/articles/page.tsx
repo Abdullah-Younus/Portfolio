@@ -6,7 +6,7 @@ const articles = () => {
     return (
         <section>
             <Layout>
-                <AnimatedText text="Words Can Change The World!" />
+                <AnimatedText text="Words Can Change The World!" className="mb-16" />
             </Layout>
         </section>
     )
