@@ -9,7 +9,11 @@ import projectOneImage from '../../../public/images/projects/crypto-screener-cov
 const FeaturedProject = ({ type, title, summary, img, link, github }: any) => {
 
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12'>
+        <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
+            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+
+           
+           
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
                 <Image src={img} alt={title} className="w-full h-auto" />
             </Link>
