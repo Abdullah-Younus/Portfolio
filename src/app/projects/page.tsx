@@ -105,7 +105,6 @@ const page = () => {
                             link="/"
                             type="Featured Project"
                             github="/"
-
                         />
                     </div>
 
