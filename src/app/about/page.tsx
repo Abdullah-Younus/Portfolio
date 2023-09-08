@@ -80,11 +80,10 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <Skilled />
                 <Experience />
                 <Education />
-
             </Layout>
 
         </section>
