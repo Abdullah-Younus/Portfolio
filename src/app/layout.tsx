@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-full min-h-screen dark:bg-dark">
+        <Script id='theme-switcher' strategy='beforeInteractive'>
+          {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+            } else {
+                document.documentElement.classList.remove('dark')
+            }`
+          }
+        </Script>
         <NavBar />
         {children}
         <Footer />
