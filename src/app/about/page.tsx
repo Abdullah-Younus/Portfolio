@@ -41,10 +41,10 @@ const About = () => {
     return (
         <section className='flex flex-col w-full items-center justify-center dark:text-light'>
             <Layout className="pt-16">
-                <AnimatedText text="Passion Fuels Purpose! " className="mb-16" />
+                <AnimatedText text="Passion Fuels Purpose! " className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
 
-                <div className='grid w-full grid-cols-8 gap-16'>
-                    <div className='col-span-3 flex flex-col items-start justify-start'>
+                <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
+                    <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='font-medium'>
                             Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional,
@@ -66,7 +66,7 @@ const About = () => {
                         <Image src={ProfileAboutPage} alt={"Profile About Page"} className='w-full h-auto rounded-2xl' priority sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw" />
                     </div>
                     <div className='col-span-2 flex flex-col items-end justify-between'>
-                        <div className='flex flex-col items-end justify-center'>
+                        <div className='flex flex-col items-end justify-center'> 
                             <span className='inline-block text-7xl font-bold'><AnimatedNumbers value={50} />+</span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75'>Satisfied Clients</h2>
                         </div>
