@@ -16,10 +16,7 @@ const Details = ({ type, time, place, info }: any) => {
             </p>
         </motion.div>
     </li>
-
 }
-
-
 
 const Education = () => {
 
@@ -54,7 +51,6 @@ const Education = () => {
                         place="Massachusetts Institute Of Technology (MIT)"
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                         Intelligence."
-
                     />
                     <Details
                         type="Bachelor Of Science In Computer Science"
@@ -62,7 +58,6 @@ const Education = () => {
                         place="Massachusetts Institute Of Technology (MIT)"
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                         Intelligence."
-
                     />
                 </ul>
             </div>

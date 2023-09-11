@@ -53,9 +53,9 @@ const Article = ({ img, title, date, link }: any) => {
             initial={{ y: 200 }}
             whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
             viewport={{ once: true }}
-            className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4">
+            className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark">
             <MovingImg title={title} img={img} link={link} />
-            <span className='text-primary font-semibold pl-4'>
+            <span className='text-primary font-semibold pl-4 dark:text-primaryDark'>
                 {date}
             </span>
             {/* <Image src={img} alt='Image Article' /> */}
@@ -67,7 +67,7 @@ const Article = ({ img, title, date, link }: any) => {
 const FeaturedArticle = ({ img, title, time, summary, link }: any) => {
 
     return (
-        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark' />
             <Link href={link} target='_blank' className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} className='w-full h-auto'
@@ -93,7 +93,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }: any) => {
 
 const Articles = () => {
     return (
-        <section className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+        <section className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
             <Layout className="pt-16">
                 <AnimatedText text="Words Can Change The World!" className="mb-16" />
                 <ul className='grid grid-cols-2 gap-16'>
