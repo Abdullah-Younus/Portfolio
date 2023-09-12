@@ -10,9 +10,9 @@ const Skill = ({ name, x, y }: any) => {
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
-      className='flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark absolute dark:text-dark dark:bg-light'>
+      className='flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark absolute dark:text-dark dark:bg-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold'>
       {name}
-    </motion.div>
+    </motion.div> 
   )
 }
 
@@ -20,9 +20,9 @@ const Skill = ({ name, x, y }: any) => {
 const Skilled = () => {
   return (
     <div>
-      <h2 className='font-bold text-8xl mt-64 w-full text-center'>Skills</h2>
+      <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32'>Skills</h2>
       <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark'>
-        <motion.div whileHover={{ scale: 1.05 }} className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark dark:text-dark dark:bg-light'>
+        <motion.div whileHover={{ scale: 1.05 }} className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2'>
           Web
         </motion.div>
 
