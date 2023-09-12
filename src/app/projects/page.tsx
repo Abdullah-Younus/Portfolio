@@ -46,8 +46,6 @@ const FeaturedProject = ({ type, title, summary, img, link, github }: any) => {
                     </Link>
                 </div>
             </div>
-
-
         </article>
     )
 }
@@ -95,7 +93,7 @@ const page = () => {
                 <AnimatedText text="Imagination Trumps Knowledge!" className="mb-6 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
 
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                    <div className='col-span-12'>
+                    <div className='col-span-12  sm:col-span-12'>
                         <FeaturedProject
                             title="Crypto Screener Application"
                             img={projectOneImage}
@@ -108,7 +106,7 @@ const page = () => {
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             title="Crypto Screener Application"
                             img={projectOneImage}
@@ -122,7 +120,7 @@ const page = () => {
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             title="Crypto Screener Application"
                             img={projectOneImage}
@@ -136,7 +134,7 @@ const page = () => {
                         />
                     </div>
 
-                    <div className='col-span-12'>
+                    <div className='col-span-12 sm:col-span-12'>
                         <FeaturedProject
                             title="Crypto Screener Application"
                             img={projectOneImage}
@@ -149,7 +147,7 @@ const page = () => {
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             title="Crypto Screener Application"
                             img={projectOneImage}
@@ -163,7 +161,7 @@ const page = () => {
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             title="Crypto Screener Application"
                             img={projectOneImage}
@@ -173,12 +171,9 @@ const page = () => {
                             link="/"
                             type="Featured Project"
                             github="/"
-
                         />
                     </div>
-
                 </div>
-
             </Layout>
         </section>
     )
